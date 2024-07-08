@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+    /* Language and Environment */
+    "target": "ES5",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "paths": {
+      "@root/*": ["./*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@functions/*": ["./src/functions/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@services/*": ["./src/services/*"],
+      "@contents/*": ["./src/contents/*"],
+      "@repositories/*": ["./src/repositories/*"],
+      "@events/*": ["./src/events/*"],
+    },
+    "resolveJsonModule": true,                        /* Enable importing .json files. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "sourceMap": true,
+  }
+}
