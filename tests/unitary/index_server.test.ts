@@ -18,7 +18,7 @@ describe('#Index Server: Unitary', () => {
 
   it('should have all server settings NODE_ENV development', async () => {
 
-    const PORT = 2121;
+    const PORT = 2621;
     const NODE_ENV = 'development';
 
     process.env.NODE_ENV = NODE_ENV;
